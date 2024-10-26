@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apoie o iWash</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #356b8c;
+        }
+        .copy-btn {
+            background-color: #59a8d9;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Seja um Apoiador do iWash!</h1>
+        <p>As doações serão utilizadas para:</p>
+        <ul>
+            <li>Desenvolvimento do aplicativo</li>
+            <li>Compra de materiais</li>
+            <li>Compra de domínio</li>
+        </ul>
+        <h2>Chave PIX:</h2>
+        <p id="pix-key">13972008988</p>
+        <button class="copy-btn" onclick="copyPixKey()">Copiar Chave PIX</button>
+    </div>
+
+    <script>
+        function copyPixKey() {
+            const pixKey = document.getElementById("pix-key").innerText;
+            navigator.clipboard.writeText(pixKey).then(() => {
+                alert("Chave PIX copiada para a área de transferência!");
+            }).catch(err => {
+                console.error('Erro ao copiar a chave PIX: ', err);
+            });
+        }
+    </script>
+</body>
+</html>
