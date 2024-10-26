@@ -1,116 +1,59 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Projeto</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
-    <link rel="stylesheet" href="styles.css">
+    <title>Apoie o iWash</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #356b8c;
+        }
+        .copy-btn {
+            background-color: #59a8d9;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <header class="header">
-        <div class="nav-container">
-            <a href="index.html" class="logo">
-                <img src="IWASH.png" alt="Logo do Projeto">
-                <span>iWash</span>
-            </a>
-            <nav>
-                <div class="nav-toggle">
-                    <i class="fas fa-bars"></i>
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="#home">Início</a></li>
-                    <li><a href="#about">Sobre</a></li>
-                    <li><a href="#features">Funcionalidades</a></li>
-                    <li><a href="#how-it-works">Como Funciona</a></li>
-                    <li><a href="#supporters">Apoiadores</a></li>
-                    <li><a href="#contact">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <div class="container">
+        <h1>Seja um Apoiador do iWash!</h1>
+        <p>As doações serão utilizadas para:</p>
+        <ul>
+            <li>Desenvolvimento do aplicativo</li>
+            <li>Compra de materiais</li>
+            <li>Compra de domínio</li>
+        </ul>
+        <h2>Chave PIX:</h2>
+        <p>Matheus Silvano Pereira - NuBank</p>
+        <p id="pix-key">13972008988</p>
+        <button class="copy-btn" onclick="copyPixKey()">Copiar Chave PIX</button>
+    </div>
 
-    <section id="home" class="hero">
-        <h1>iWash</h1>
-        <p>Somos uma StartUp de lavagem automotiva a domicílio. Nossa missão é oferecer um serviço de lava-rápido delivery de alta qualidade, que combina conveniência e cuidado com o seu carro.</p>
-        <a href="#about" class="cta-button">Saiba Mais</a>
-    </section>
-
-    <section id="about" class="section">
-        <h2 class="section-title">Sobre o Projeto</h2>
-        <p>Este projeto foi proposto como parte da matéria de Teoria Geral de Sistemas do curso de Sistemas de Informação da UFSC, nossa solucção visa proporcionar uma experiência de lavagem de veículos simples e descomplicada. Basta solicitar nossos serviços pelo site ou aplicativo, e nossa equipe irá até você </p>
-    </section>
-
-    <section id="features" class="section">
-        <h2 class="section-title">Funcionalidades</h2>
-        <div class="features">
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fas fa-car"></i>
-                </div>
-                <h3>Lavagem completa</h3>
-                <p>Lavagem interna e externa, polimento e enceramento.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fas fa-clock"></i>
-                </div>
-                <h3>Praticidade</h3>
-                <p>Você enonomizará horas em filas de lava-rápidos.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fas fa-calendar-days"></i>
-                </div>
-                <h3>Agendamento fácil</h3>
-                <p>Escolha a data e horário que melhor se adapta à sua rotina.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="how-it-works" class="section how-it-works">
-        <h2 class="section-title">Como Funciona</h2>
-        <div class="step">
-            <div class="step-number">1</div>
-            <div class="step-content">
-                <h3>Chamou?</h3>
-                <p> Acesse nosso site ou aplicativo e escolha o serviço desejado. Preencha os dados necessários, como local e horário da lavagem.</p>
-            </div>
-        </div>
-        <div class="step">
-            <div class="step-number">2</div>
-            <div class="step-content">
-                <h3>Confirmou.</h3>
-                <p>Após enviar seu pedido, você receberá uma confirmação com os detalhes do agendamento. Nossa equipe se prepara para ir até você!</p>
-            </div>
-        </div>
-        <div class="step">
-            <div class="step-number">3</div>
-            <div class="step-content">
-                <h3>Lavou!</h3>
-                <p>No horário combinado, nossos profissionais chegarão até você e realizarão a lavagem do seu veículo, utilizando os melhores produtos e técnicas para garantir um resultado impecável.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="supporters" class="section supporters">
-        <div class="support-cta">
-            <h3>Seja um Apoiador</h3>
-            <p>Junte-se a nós e faça parte desta iniciativa. Seu apoio faz a diferença!</p>
-            <a href="apoiador.html" class="support-button">Quero Apoiar</a>
-        </div>
-    </section>
-
-    <section id="contact" class="section contact">
-        <h2 class="section-title">Entre em Contato</h2>
-        <p>Ficou alguma dúvida? Mande um e-mail para nós</p>
-        <a href="mailto:matheussilvano2005@gmail.com" class="cta-button">Enviar Email</a>
-    </section>
-
-    <footer class="footer">
-        <p>&copy; 2024 iWash. Todos os direitos reservados.</p>
-    </footer>
-
-    <script src="script.js"></script>
+    <script>
+        function copyPixKey() {
+            const pixKey = document.getElementById("pix-key").innerText;
+            navigator.clipboard.writeText(pixKey).then(() => {
+                alert("Chave PIX copiada para a área de transferência!");
+            }).catch(err => {
+                console.error('Erro ao copiar a chave PIX: ', err);
+            });
+        }
+    </script>
 </body>
 </html>
